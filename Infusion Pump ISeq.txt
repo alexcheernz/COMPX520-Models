@@ -1,0 +1,8 @@
+M = {Q,Σ,L,A,δ,S,F}
+Q = {buttonOnOff,buttonPlus,buttonMinus,buttonPositiveAns,buttonNegAns,textBoxInfo,textBoxMode}
+Σ = {click,observe}
+L = {3}
+A = {"Powered On","φ00ml","φ0 minutes","Start Infusion?"}
+δ = {(Initialise,click,buttonOnOff),(buttonOnOff,observe,textBoxMode),(textBoxMode,click,buttonPositiveAns),(buttonPositiveAns,click,buttonPlus),(buttonPlus,click,buttonPlus),(buttonPlus,observe,textBoxInfo),(textBoxInfo,click,buttonPositiveAns),(buttonPositiveAns,click,buttonPlus),(buttonPlus,click,buttonPlus),(buttonPlus,observe,textBoxInfo),(buttonPlus,click,buttonPositiveAns),(buttonPositiveAns,observe,textBoxMode)}
+S = {Initialise}
+F = {textBoxMode}

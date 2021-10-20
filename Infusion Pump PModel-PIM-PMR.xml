@@ -1,0 +1,417 @@
+<PIMS>
+ <PresentationModel> 
+ <PModel>SimpleInfusionPump</PModel>
+
+ <cpmodel> 
+ <cpname>Initial</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetVolume</beh> 
+<beh>S_SetVolume</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>CheckStatus</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetVolume</beh> 
+<beh>S_SetVolume</beh> 
+</widget> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetDuration</beh> 
+<beh>S_SetDuration</beh> 
+</widget> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_ConfirmSettings</beh> 
+<beh>S_ConfirmSettings</beh> 
+</widget> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_QStartInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_StartInfusion</beh> 
+<beh>S_StartInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PauseInfusion</beh> 
+<beh>S_PauseInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_CancelSettings</beh> 
+<beh>S_CancelSettings</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_StopInfusion</beh> 
+<beh>S_StopInfusion</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>SetDuration</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_ConfirmSettings</beh> 
+<beh>S_ConfirmSettings</beh> 
+</widget> 
+<widget>
+ <name>buttonPlus</name> 
+ <cat>ActionControl</cat> 
+<beh>I_IncreaseDuration</beh> 
+<beh>S_IncreaseDuration</beh> 
+</widget> 
+<widget>
+ <name>buttonMinus</name> 
+ <cat>ActionControl</cat> 
+<beh>I_DecreaseDuration</beh> 
+<beh>S_DecreaseDuration</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_PowerOff</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_CancelSettings</beh> 
+<beh>S_CancelSettings</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>SettingsCancelled</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetVolume</beh> 
+<beh>S_SetVolume</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>QStartInfusion</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_StartInfusion</beh> 
+<beh>S_StartInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PauseInfusion</beh> 
+<beh>S_PauseInfusion</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>Off</cpname> 
+<widget>
+ <name>buttonOnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOn</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>Infusing</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetVolume</beh> 
+<beh>S_SetVolume</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PauseInfusion</beh> 
+<beh>S_PauseInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonOnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_PowerOff</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>InfusionPaused</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_StartInfuion</beh> 
+<beh>S_StartInfuion</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_StopInfusion</beh> 
+<beh>S_StopInfusion</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl </cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_ToggleOnOff</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>SettingsConfirmed</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_QStartInfusion</beh> 
+<beh>S_QStartInfusion</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PauseInfusion</beh> 
+<beh>S_PauseInfusion</beh> 
+</widget> 
+<widget>
+ <name>OnOff</name> 
+ <cat>ActionControl</cat> 
+<beh>I_PowerOff</beh> 
+<beh>S_PowerOff</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>ActionControl</cat> 
+<beh>I_CheckStatus</beh> 
+<beh>S_CheckStatus</beh> 
+</widget> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>StartInfusion</cpname> 
+</cpmodel> 
+
+ <cpmodel> 
+ <cpname>SetVolume</cpname> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_SetDuration</beh> 
+<beh>S_SetDuration</beh> 
+</widget> 
+<widget>
+ <name>buttonPlus</name> 
+ <cat>ActionControl</cat> 
+<beh>I_IncVolume</beh> 
+<beh>S_IncreaseVolume</beh> 
+</widget> 
+<widget>
+ <name>buttonPositiveAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_DecVolume</beh> 
+<beh>S_DecreaseVolume</beh> 
+</widget> 
+<widget>
+ <name>buttonNegAns</name> 
+ <cat>ActionControl</cat> 
+<beh>I_CancelSettings</beh> 
+<beh>S_CancelSettings</beh> 
+</widget> 
+<widget>
+ <name>textBoxInfo</name> 
+ <cat>Display</cat> 
+<beh>I_setDisplay</beh> 
+</widget> 
+</cpmodel> 
+</PresentationModel> 
+<PIM>
+<transition>
+<start>SetVolume</start> 
+ <end>SetDuration</end> 
+ <ibeh>I_SetDuration</ibeh> 
+ </transition> 
+<transition>
+<start>SettingsCancelled</start> 
+ <end>SetVolume</end> 
+ <ibeh>I_SetVolume</ibeh> 
+ </transition> 
+<transition>
+<start>QStartInfusion</start> 
+ <end>StartInfusion</end> 
+ <ibeh>I_StartInfusion</ibeh> 
+ </transition> 
+<transition>
+<start>CheckStatus</start> 
+ <end>QStartInfusion</end> 
+ <ibeh>I_QStartInfusion</ibeh> 
+ </transition> 
+<transition>
+<start>CheckStatus</start> 
+ <end>SetVolume</end> 
+ <ibeh>I_SetVolume</ibeh> 
+ </transition> 
+<transition>
+<start>CheckStatus</start> 
+ <end>SetDuration</end> 
+ <ibeh>I_SetDuration</ibeh> 
+ </transition> 
+<transition>
+<start>CheckStatus</start> 
+ <end>StartInfusion</end> 
+ <ibeh>I_StartInfusion</ibeh> 
+ </transition> 
+<transition>
+<start>Infusing</start> 
+ <end>SetVolume</end> 
+ <ibeh>I_SetVolume</ibeh> 
+ </transition> 
+<transition>
+<start>Initial</start> 
+ <end>SetVolume</end> 
+ <ibeh>I_SetVolume</ibeh> 
+ </transition> 
+<transition>
+<start>SettingsConfirmed</start> 
+ <end>QStartInfusion</end> 
+ <ibeh>I_QStartInfusion</ibeh> 
+ </transition> 
+<transition>
+<start>SettingsConfirmed</start> 
+ <end>CheckStatus</end> 
+ <ibeh>I_CheckStatus</ibeh> 
+ </transition> 
+</PIM> 
+<PMR> 
+<rel> 
+ <sbeh>S_SetVolume</sbeh> 
+ <sop>SetVolume</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_ToggleOnOff</sbeh> 
+ <sop>ToggleOnOff</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_SetDuration</sbeh> 
+ <sop>SetDuration</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_ConfirmSettings</sbeh> 
+ <sop>ConfirmSettings</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_StartInfusion</sbeh> 
+ <sop>StartInfusion</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_PauseInfusion</sbeh> 
+ <sop>PauseInfusion</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_CancelSettings</sbeh> 
+ <sop>CancelSettings</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_StopInfusion</sbeh> 
+ <sop>StopInfusion</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_IncreaseDuration</sbeh> 
+ <sop>IncreaseDuration</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_DecreaseDuration</sbeh> 
+ <sop>DecreaseDuration</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_PowerOff</sbeh> 
+ <sop>PowerOff</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_StartInfuion</sbeh> 
+ <sop></sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_QStartInfusion</sbeh> 
+ <sop>QStartInfusion</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_CheckStatus</sbeh> 
+ <sop>CheckStatus</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_IncreaseVolume</sbeh> 
+ <sop>IncreaseVolume</sop> 
+ </rel> 
+<rel> 
+ <sbeh>S_DecreaseVolume</sbeh> 
+ <sop>DecreaseVolume</sop> 
+ </rel> 
+</PMR> 
+</PIMS>
